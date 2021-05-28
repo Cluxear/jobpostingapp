@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.tw.jobposting",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "jobposting",
+    "packageName": "com.tw.jobposting",
+    "packageFolder": "com/tw/jobposting",
+    "serverPort": "8086",
+    "authenticationType": "oauth2",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjgwMWUzOWUzOGQ2ZTdkYzJhNjVmNWViNDdiZjJmMzgyMTYxNTRmOTY3Y2ZiY2M2YmI5NDQ1MjM4YjUyMTA0ZDBkMWM4MjczNDBkMjEwMThkM2NiYzBiZDAyYTgwNWQ3OWZkYTRhMjI4OTgyNjE1OGY1NGEyZDhkOWIzNDhhYWE=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1615496690819,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "fr",
+    "languages": ["fr"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true,
+    "lastLiquibaseTimestamp": 1618841868000
+  }
+}

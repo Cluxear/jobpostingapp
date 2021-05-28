@@ -1,0 +1,22 @@
+{
+  "name": "DegreeLevel",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210313130721",
+  "entityTableName": "degree_level",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jobposting",
+  "applications": "*",
+  "microserviceName": "jobposting"
+}

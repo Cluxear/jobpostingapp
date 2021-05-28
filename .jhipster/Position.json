@@ -1,0 +1,38 @@
+{
+  "name": "Position",
+  "fields": [
+    {
+      "fieldName": "jobTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minSalary",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "maxSalary",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "jobPost",
+      "otherEntityRelationshipName": "positon",
+      "relationshipName": "jobPost",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210313130621",
+  "entityTableName": "position",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jobposting",
+  "applications": "*",
+  "microserviceName": "jobposting"
+}

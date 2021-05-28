@@ -1,0 +1,65 @@
+{
+  "name": "JobPost",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estimatedSalary",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "LocationType",
+      "fieldValues": "REMOTE,ON_SITE"
+    },
+    {
+      "fieldName": "employmentType",
+      "fieldType": "EmploymentType",
+      "fieldValues": "FULL_TIME,PART_TIME,CONTRACT,TEMPORARY,SEASONAL,INTERNSHIP"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "modifiedAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "degreeLevel",
+      "otherEntityRelationshipName": "jobPost",
+      "relationshipName": "degreeLevel",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "position",
+      "otherEntityRelationshipName": "jobPost",
+      "relationshipName": "positon",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210313130521",
+  "entityTableName": "job_post",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jobposting",
+  "applications": "*",
+  "microserviceName": "jobposting"
+}

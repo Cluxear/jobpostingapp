@@ -1,0 +1,46 @@
+entity JobPost { 
+   title String,
+   description String,
+   estimatedSalary Double,
+   type LocationType,
+   employmentType EmploymentType
+   createdAt Instant,
+   modifiedAt Instant
+   
+}
+entity Position {
+	name String
+}
+entity DegreeLevel {
+	name String
+}
+enum LocationType {
+	REMOTE,
+        ON_SITE
+}
+enum EmploymentType {
+    FULL_TIME,
+    PART_TIME,
+    CONTRACT,
+    TEMPORARY,
+    SEASONAL,
+    INTERNSHIP
+}
+entity Position {
+    jobTitle String,
+	minSalary Long,
+	maxSalary Long
+}
+
+relationship OneToOne {
+	JobPost{degreeLevel} to DegreeLevel
+}
+relationship OneToOne {
+	JobPost{positon} to Position{jobPost}
+}
+
+// Use Data Transfer Objects (DTO)
+ dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl

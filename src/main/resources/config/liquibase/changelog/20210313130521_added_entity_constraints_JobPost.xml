@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Jobpost.
+    -->
+    <changeSet id="20210313130521-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="degree_level_id"
+                                 baseTableName="job_post"
+                                 constraintName="fk_job_post_degree_level_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="degree_level"/>
+
+        <addForeignKeyConstraint baseColumnNames="positon_id"
+                                 baseTableName="job_post"
+                                 constraintName="fk_job_post_positon_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="position"/>
+
+    </changeSet>
+</databaseChangeLog>

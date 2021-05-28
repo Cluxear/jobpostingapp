@@ -1,0 +1,29 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "jobposting",
+  "relationships": [
+    {
+      "relationshipName": "jobpost",
+      "otherEntityName": "jobpost",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id",
+      "otherEntityRelationshipName": "jobRequirements"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "content",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20210419141748",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "no",
+  "entityTableName": "job_requirements",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no",
+  "microserviceName": "jobposting"
+}
